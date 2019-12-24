@@ -1,6 +1,6 @@
 {
   "name": "sar",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "hota1024",
   "main": "lib/index.js",
   "types": "lib/src",
@@ -11,7 +11,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "lint": "eslint ./**/*.ts"
+    "lint": "eslint ./**/*.ts",
+    "publish-npm": "tsc; yarn publish;"
   },
   "dependencies": {
     "cac": "^6.5.3",
