@@ -1,5 +1,4 @@
 import express from 'express'
-// import rewrite from 'express-urlrewrite'
 import { cac } from 'cac'
 import chalk from 'chalk'
 import * as path from 'path'
@@ -11,7 +10,7 @@ cli
   .command('[dir]', 'Start static local server.')
   .option('-p, --port', 'port')
   .option('-s, --spa', 'spa flag')
-  .action((dir = '.', options: any) => {
+  .action((dir: string = '.', options: any) => {
     console.log(chalk`{cyan sar-cli ${version}}`)
     const app = express()
     const host = 'localhost'
