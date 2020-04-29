@@ -8,7 +8,7 @@ const cli = cac('sar')
 
 cli
   .command('[dir]', 'Start static local server.')
-  .option('-p, --port', 'port')
+  .option('--port <port>', 'port')
   .option('-s, --spa', 'spa flag')
   .action((dir: string = '.', options: any) => {
     console.log(chalk`{cyan sar-cli ${version}}`)
